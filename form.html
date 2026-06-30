@@ -3,79 +3,108 @@
 
 <head>
     <title> form creation</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .forms {
+            display: flex;
+            justify-content: center;
+        }
+
+        table {
+            background-color: orange;
+            color: white;
+
+        }
+
+        .label1 {
+            font-size: larger;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: left;
+
+        }
+
+        .input {
+            text-align: end;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>PRODUCT DETAILS</h1>
     <div>
+        <h1>PRODUCT DETAILS</h1>
+    </div>
+    <div class="forms">
         <form method="post" enctype="multipart/form-data">
-            <table>
+            <table style="text-align: center; border-spacing:100px 20px ;">
                 <tr>
-                    <td><label for="Product id">Product Id</label></td>
-                    <td><input type="text" id="Product id" name="Product id" /></td>
+                    <td class="label1"><label for="Product id">Product Id</label></td>
+                    <td class="input1"><input type="text" id="Product id" name="Product id" /></td>
                 </tr>
                 <tr>
-                    <td><label for="product name">Product Name</label></td>
-                    <td><input type="text" id="product name" name="product name"></td>
+                    <td class="label1"><label for="product name">Product Name</label></td>
+                    <td class="input1"><input type="text" id="product name" name="product name"></td>
                 </tr>
                 <tr>
-                    <td><label for="">Category</label></td>
-                    <td><select>
-                            <option>Enter Category</option>
-                            <option>dress</option>
-                            <option>snacks</option>
+                    <td class="label1"><label for="">Category</label></td>
+                    <td class="input1"><select name="category">
+                            <option value="">Enter Category</option>
+                            <option value="dress">dress</option>
+                            <option value="snacks">snacks</option>
 
                         </select></td>
                 </tr>
                 <tr>
-                    <td>
+                    <td class="label1">
                         <label for="manufactuirng date">manufacturing date</label>
                     </td>
-                    <td> <input type="date" id="manufacturing date" name="manufacturing date" />
+                    <td class="input1"> <input type="date" id="manufacturing date" name="manufacturing date" />
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td class="label1">
                         <label for="expiry">Expiry date</label>
                     </td>
-                    <td><input type="date" id="expiry" name="expiry date" /></td>
+                    <td class="input1"><input type="date" id="expiry" name="expiry date" /></td>
                 </tr>
                 <tr>
-                    <td>
-                        <label for="product quanlity">product quality</label>
+                    <td class="label1">
+                        <label for="product quality">product quality</label>
                     </td>
-                    <td>
-                        <select name="product quanlity">
-                            <option>please enter your quality</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
+                    <td class="input1">
+                        <select name="product quality">
+                            <option value="">please enter your quality</option>
+                            <option value="first quality">first quality</option>
+                            <option value="second quality">second quality</option>
+                            <option value="third quality">third quality</option>
                         </select>
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td class="label1">
                         <label for="image">product image</label>
                     </td>
-                    <td>
+                    <td class="input1">
                         <input type="file" id="image" name="product image" />
                     </td>
                 </tr>
 
                 <tr>
-                    <td><label for="">Price</label></td>
-                    <td><input type="number" id="price" name="price" /></td>
+                    <td class="label1"><label for="">Price</label></td>
+                    <td class="input1"><input type="number" id="price" name="price" /></td>
                 </tr>
                 <tr>
-                    <td>
+                    <td class="label1">
                         <label for="contact">contact us</label>
                     </td>
-                    <td>
+                    <td class="input1">
                         <input type="Email" id="contact" name="contact" />
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td colspan="2">
                         <button type="submit">submit</button>
                 </tr>
 
