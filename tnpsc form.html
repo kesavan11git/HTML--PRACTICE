@@ -1,14 +1,110 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>TNPSC Form</title>
     <link rel="icon" href="./assets/tnpsc.webp" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="description" content="TNPSC Form Page">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-    
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #fff;
+        }
 
+        .form-box {
+              width: 420px;
+              margin: 40px auto;
+              border: 1px solid #ccc;
+              border-radius:10px ;
+              padding: 30px;
+              text-align: left;
+        }
+
+        label {
+            font-size: 22px;
+            font-weight: bold;
+
+        }
+
+        input {
+            width: 100%;
+            padding: 14px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #aaa;
+            border-radius: 8px;
+            font-size: 18px;
+
+            
+        }
+        .question{
+            width=100%;
+            padding:15px;
+            text-align: center;
+            border: 1px splid #ccc;
+            border-radius: 8px;
+            color:blue;
+            font-size: 26px;
+            font-weight: bold;
+            margin:15px 0;
+        }
+        button {
+            width: 100%;
+            padding: 14px;
+            margin-top: 10px;
+            margin-bottom: 20px; 
+            border: 1px solid #aaa;
+            border radius: 8px;
+            background:#2d00ff;
+            color: white;
+            font-size: 24px;
+            cursor:pointer;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <center>
+            <img src="./assets/tnpsc.webp" alt="TNPSC Logo" width="150" height="150">
+            <h1>TAMILNADU PUBLIC SERVICE COMMISION</h1>
+            <h3>COMBINED CIVIL SERVICES EXAMINATION</h3>
+            <h3>(GROUP-II SERVICES)(NOTIFICATION NO.11/2025)</h3>
+            <h2>DATE OF MAIN EXAMINATION.22.02.2026 FN AND 15.03.2026 AN</h2>
+        </center>
+    </div>
+    <hr>
+    <div class="form-box">
+        <form method="post" enctype="multipart/form-data">
+            <div>
+                <label>Register No <span style="color: red;">*</span></label><br/>
+                <input type="text" name="register no" required>
+            </div>
+            <div>
+                <label>Date of Birth<span style="color: red;">*</span></label><br/>
+                <input type="date" name="dob" required>
+            </div>
+            <div>
+                <label>Verification Question<span class="required" style="color: red;">*</span></label>
+            </div>
+            <div class="question">
+                
+              what is 18+5?
+            </div>
+            <div>
+                <input type="number" placeholder="enter answer(number)" required>
+            </div>
+            <div>
+
+                <button type="submit">Submit</button>
+            </div>
+            <div>
+                <button type="back">Back</button>
+            </div>
+         </div>
+    </form>
 </body>
 </html>
