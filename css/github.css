@@ -1,6 +1,29 @@
-.navigate{
-    justify-content: space-evenly;
-    display: flex;
 
-    color:white;
+img{
+    border-radius: 20px;
+    
 }
+select{
+    border-radius: 20px;
+    padding:5px;
+    text-align: center;
+}
+[type="search"]
+{
+    border-radius:10px;
+    border:2px solid black;
+    margin-left:100px;
+}
+[type="submit1"]
+{
+    border:2px dotted green;
+    border-radius:10px;
+    margin-left:50px;
+}
+[type="back"]
+{
+    border-radius: 10px;
+    border:2px solid red;
+    margin-left:40px;
+}
+
