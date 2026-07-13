@@ -1,0 +1,65 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:arial sans-serif;
+}
+body{
+    background-image:url("../asstes/image/back img.webp");
+    background-size: cover;
+    background-position: center;
+    height:700px;
+    color:white;
+
+}
+header{
+    display:flex;
+    justify-content:space-between;
+    padding:20px 60px;
+}
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:10px;
+}
+
+nav button{
+    background:green;
+    color:white;
+    padding:10px 20px;
+    border-radius:20px;
+}
+.container{
+    display:flex;
+    justify-content:space-between;
+    padding:60px;
+}
+.first-container h1{
+    font-size:55px;
+}
+
+.first-container h2{
+    color:aqua;
+    font-size:60px;
+    margin:10px;
+}
+
+.first-container p{
+    margin:20px 0;
+    line-height:30px;
+}
+
+.first-container a{
+    text-decoration:none;
+    background:aqua;
+    color:black;
+    padding:12px 25px;
+    border-radius:20px;
+}
+
+.second-container img{
+    width:350px;
+    height:350px;
+    border-radius:50%;
+    border:5px solid;
+}
